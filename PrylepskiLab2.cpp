@@ -42,14 +42,8 @@ int main(){
 	}
 	
 	// Number of sign changes
-	bool d;
+	bool d = m[0] >= 0;
 	int k = 0;
-	
-	if (m[0] >= 0){
-		d = true;
-	} else{
-		d = false;
-	}
 	
 	for(int i = 1; i < n; i++){
 		if(d != (m[i] >= 0)){
@@ -79,11 +73,25 @@ int main(){
 		}
 		s *= m[i];
 	}
-
-/*	
-	cout<< "Array : ";
+	
+	cout<< "Array before sort: ";
 	for(int i = 0; i < n; i++){
 		cout<< m[i] <<";";
 	}
-*/	
+	cout<<'\n';
+	
+	for(int i = 1; i < n; i++){
+		if(m[i] % 2 == 0){
+			for(int i2 = i; m[i2-1] % 2 != 0 && i2 > 0; i2--){
+				int k = m[i2];
+				m[i2] = m[i2 -1];
+				m[i2 -1] = k;
+			}
+		}
+	}
+	
+	cout<< "Array after sort: ";
+	for(int i = 0; i < n; i++){
+		cout<< m[i] <<";";
+	}	
 }
