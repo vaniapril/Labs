@@ -1,0 +1,26 @@
+[
+  {
+    "type": "stock",
+    "name": "Apple",
+    "high52week": 145.09,
+    "low52week": 53.15,
+    "current": 126.0,
+    "code": "AAPL"
+  },
+  {
+    "type": "stock",
+    "name": "Apple",
+    "high52week": 145.09,
+    "low52week": 53.15,
+    "current": 126.0,
+    "code": "AAPL"
+  },
+  {
+    "type": "stock",
+    "name": "Tesla",
+    "high52week": 900.4,
+    "low52week": 70.1,
+    "current": 693.73,
+    "code": "TSLA"
+  }
+]

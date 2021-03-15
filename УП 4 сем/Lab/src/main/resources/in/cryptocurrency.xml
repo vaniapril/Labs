@@ -1,0 +1,26 @@
+<ArrayList>
+    <item>
+        <type>cryptocurrency</type>
+        <name>Bitcoin</name>
+        <high52week>58354.14</high52week>
+        <low52week>4000.0</low52week>
+        <current>53289.81</current>
+        <code>BTC</code>
+    </item>
+    <item>
+        <type>cryptocurrency</type>
+        <name>Ethereum</name>
+        <high52week>2036.29</high52week>
+        <low52week>105.17</low52week>
+        <current>1794.02</current>
+        <code>ETH</code>
+    </item>
+    <item>
+        <type>cryptocurrency</type>
+        <name>Binance coin</name>
+        <high52week>333.46</high52week>
+        <low52week>11.42</low52week>
+        <current>256.82</current>
+        <code>BNB</code>
+    </item>
+</ArrayList>

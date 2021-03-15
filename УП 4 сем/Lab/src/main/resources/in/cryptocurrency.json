@@ -1,0 +1,26 @@
+[
+  {
+    "type": "cryptocurrency",
+    "name": "Bitcoin",
+    "high52week": 58354.14,
+    "low52week": 4000.0,
+    "current": 53289.81,
+    "code": "BTC"
+  },
+  {
+    "type": "cryptocurrency",
+    "name": "Ethereum",
+    "high52week": 2036.29,
+    "low52week": 105.17,
+    "current": 1794.02,
+    "code": "ETH"
+  },
+  {
+    "type": "cryptocurrency",
+    "name": "Binance coin",
+    "high52week": 333.46,
+    "low52week": 11.42,
+    "current": 256.82,
+    "code": "BNB"
+  }
+]
