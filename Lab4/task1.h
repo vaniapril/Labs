@@ -1,7 +1,8 @@
 #ifndef LAB3_TASK1_H
 #define LAB3_TASK1_H
 
-#include "support.h"
+#include "data.h"
+#include "matrix.h"
 
 namespace namespaceTask1{
     double** task(MatrixData *matrixData){

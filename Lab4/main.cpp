@@ -1,14 +1,16 @@
 #include <iostream>
-#include "support.h"
+#include <ctime>
+#include <random>
 #include "task1.h"
 #include "task2-1.h"
 #include "task2-2.h"
+#include "task2-3.h"
 
 MatrixData *matrixData;
 int threadCount;
 
 void read(){
-    FILE* in = fopen("input.txt", "r");
+    FILE* in = fopen("..\\input.txt", "r");
     int m;
     int n;
     int l;
@@ -31,33 +33,39 @@ void read(){
     matrixData = new MatrixData(A, B, m, n, l);
 }
 
-void write(double **C){
+bool equals(double **A, double **B){
+    bool isEqual = true;
     for (int i = 0; i < matrixData->_m; i++) {
-        std::cout<<'\n';
-        for (int j = 0; j < matrixData->_n; j++) {
-            std::cout<<matrixData->_A[i][j]<<' ';
-        }
-    }
-    std::cout<<'\n';
-    for (int i = 0; i < matrixData->_n; i++) {
-        std::cout<<'\n';
         for (int j = 0; j < matrixData->_l; j++) {
-            std::cout<<matrixData->_B[i][j]<<' ';
+            if (A[i][j] != B[i][j]){
+                isEqual = false;
+                break;
+            }
         }
     }
-
-    std::cout<<'\n';
-    for (int i = 0; i < matrixData->_m; i++) {
-        std::cout<<'\n';
-        for (int j = 0; j < matrixData->_l; j++) {
-            std::cout<<C[i][j]<<' ';
-        }
-    }
+    return isEqual;
 }
 
 int main() {
     read();
-    double **C = namespaceTask2_2::task(matrixData, threadCount);
-    write(C);
+
+    clock_t time1 = clock();
+    double **C1 = namespaceTask1::task(matrixData);
+    clock_t time2 = clock();
+    double **C21 = namespaceTask2_1::task(matrixData, threadCount);
+    clock_t time3 = clock();
+    double **C22 = namespaceTask2_2::task(matrixData, threadCount);
+    clock_t time4 = clock();
+    double **C23 = namespaceTask2_3::task(matrixData, threadCount);
+    clock_t time5 = clock();
+
+    if(equals(C1, C21) && equals(C21, C22) && equals(C22, C23)){
+        std::cout<< "Simple multiplication: " << (double)(time2 - time1) / CLOCKS_PER_SEC << " sec."<<'\n';
+        std::cout<< "Multithreaded multiplication (row-column): " << (double)(time3 - time2) / CLOCKS_PER_SEC << " sec."<<'\n';
+        std::cout<< "Multithreaded multiplication (column-row) " << (double)(time4 - time3) / CLOCKS_PER_SEC << " sec."<<'\n';
+        std::cout<< "Multithreaded multiplication (blocks): " << (double)(time5 - time4) / CLOCKS_PER_SEC << " sec."<<'\n';
+    } else {
+        std::cout<<"Error";
+    }
     return 0;
 }
