@@ -1,0 +1,26 @@
+<ArrayList>
+    <item>
+        <type>preciousmetal</type>
+        <name>Gold</name>
+        <high52week>2072.5</high52week>
+        <low52week>1460.7</low52week>
+        <current>1811.4</current>
+        <code>XAU</code>
+    </item>
+    <item>
+        <type>preciousmetal</type>
+        <name>Silver</name>
+        <high52week>29.42</high52week>
+        <low52week>11.77</low52week>
+        <current>25.91</current>
+        <code>XAG</code>
+    </item>
+    <item>
+        <type>preciousmetal</type>
+        <name>Platinum</name>
+        <high52week>1333.3</high52week>
+        <low52week>585.2</low52week>
+        <current>1213.34</current>
+        <code>XPT</code>
+    </item>
+</ArrayList>

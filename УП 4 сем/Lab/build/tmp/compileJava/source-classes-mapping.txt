@@ -1,0 +1,47 @@
+models/DAOs/fabrics/CryptocurrencyFabric.java
+ models.DAOs.fabrics.CryptocurrencyFabric
+models/DAOs/JsonDao.java
+ models.DAOs.JsonDao
+ models.DAOs.JsonDao$1
+models/DAOs/fabrics/MonetaryUnitFabric.java
+ models.DAOs.fabrics.MonetaryUnitFabric
+views/ConsoleView.java
+ views.ConsoleView
+ views.ConsoleView$1
+models/Validator.java
+ models.Validator
+models/DAOs/AbstractDao.java
+ models.DAOs.AbstractDao
+models/units/PreciousMetal.java
+ models.units.PreciousMetal
+models/units/Cryptocurrency.java
+ models.units.Cryptocurrency
+models/DAOs/fabrics/PreciousMetalFabric.java
+ models.DAOs.fabrics.PreciousMetalFabric
+models/DAOs/XMLDao.java
+ models.DAOs.XMLDao
+ models.DAOs.XMLDao$1
+models/DAOs/mappers/CsvMapper.java
+ models.DAOs.mappers.CsvMapper
+models/units/Stock.java
+ models.units.Stock
+Main.java
+ Main
+models/DAOs/fabrics/FinancialUnitFabric.java
+ models.DAOs.fabrics.FinancialUnitFabric
+models/DAOs/fabrics/StockFabric.java
+ models.DAOs.fabrics.StockFabric
+models/units/MonetaryUnit.java
+ models.units.MonetaryUnit
+models/DAOs/proxy/DaoProxyHandler.java
+ models.DAOs.proxy.DaoProxyHandler
+models/units/FinancialUnit.java
+ models.units.FinancialUnit
+models/DAOs/CsvDao.java
+ models.DAOs.CsvDao
+controllers/MainController.java
+ controllers.MainController
+ controllers.MainController$1
+ controllers.MainController$2
+models/DAOs/proxy/ProxyFabric.java
+ models.DAOs.proxy.ProxyFabric
